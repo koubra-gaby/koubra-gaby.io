@@ -1,43 +1,129 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <nav class="nav">
-                <ul>
-                    <li><a href="#">Gmail</a></li>
-                    <li><a href="#">Images</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
-            <div class="logo">
-                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo">
-            </div>
-            <div class="search">
-                <input type="text" class="search-bar" placeholder="Recherche Google">
-                <div class="buttons">
-                    <button>Recherche Google</button>
-                    <button>J'ai de la chance</button>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Publicité</a></li>
-                    <li><a href="#">Entreprise</a></li>
-                    <li><a href="#">Comment ça marche</a></li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-</body>
-</html>
+* {
+    dimensionnement de la boîte : bordure-boîte ;
+    marge :  0 ;
+    remplissage :  0 ;
+}
+
+html ,  corps {
+    largeur :  100 % ;
+    hauteur :  100 % ;
+    marge :  0 ;
+    remplissage :  0 ;
+}
+
+corps {
+    affichage : flexible;
+    justifier-contenu : centre;
+    align-items : centre;
+    hauteur min :  100 vh ;
+    famille de polices : Arial , sans-serif ;
+    couleur d'arrière-plan :  # f2f2f2 ;
+}
+
+. récipient {
+    affichage : flexible;
+    flex-direction : colonne;
+    justifier-contenu : espace entre les deux ;
+    largeur :  100 % ;
+    largeur maximale :  800 px ;
+    hauteur :  100 vh ;
+    remplissage :  20 px ;
+    box-shadow :  0  0  10 px  rgba ( 0 ,  0 ,  0 ,  0.1 );
+    couleur d'arrière-plan :  # fff ;
+}
+
+. entête {
+    affichage : flexible;
+    justifier-contenu : flex-end;
+    marge inférieure :  20 px ;
+}
+
+. nav  ul {
+    affichage : flexible;
+    style de liste : aucun ;
+}
+
+. Nav  Li {
+    marge gauche :  20 px ;
+}
+
+. naviguer  un {
+    décoration de texte : aucune ;
+    couleur :  # 000 ;
+    taille de police :  14 px ;
+}
+
+. principal {
+    affichage : flexible;
+    flex-direction : colonne;
+    align-items : centre;
+    justifier-contenu : centre;
+    flex-grow :  1 ;
+}
+
+. logo  img {
+    largeur maximale :  100 % ;
+    hauteur : automatique;
+}
+
+. recherche {
+    marge-haut :  20 px ;
+    affichage : flexible;
+    flex-direction : colonne;
+    align-items : centre;
+    largeur :  100 % ;
+}
+
+. barre de recherche {
+    largeur :  100 % ;
+    largeur maximale :  500 px ;
+    remplissage :  10 px ;
+    taille de police :  16 px ;
+    bordure :  1 px solide # dfe1e5 ;
+    rayon-frontière : 
+    24 pixels ;
+    contour : aucun ;
+}
+
+. boutons {
+    affichage : flexible;
+    marge-haut :  20 px ;
+}
+
+. boutons  bouton {
+    marge :  0  5 px ;
+    remplissage :  10 px  20 px ;
+    bordure : aucune ;
+    rayon-bordure :  4 px ;
+    couleur d'arrière-plan :  # f8f9fa ;
+    couleur :  # 202124 ;
+    taille de police :  14 px ;
+    curseur : pointeur;
+    contour : aucun ;
+}
+
+. boutons  bouton : survolez {
+    couleur d'arrière-plan :  # e8e8e8 ;
+}
+
+. bas de page {
+    affichage : flexible;
+    justifier-contenu : centre;
+    remplissage :  10 px  0 ;
+    border-top :  1 px solide # e4e4e4 ;
+}
+
+. liens de pied  de page ul {
+    affichage : flexible;
+    style de liste : aucun ;
+}
+
+. liens de pied  de page li {
+    marge :  0  15 px ;
+}
+
+. liens de pied de page  a {
+    décoration de texte : aucune ;
+    couleur :  # 70757a ;
+    taille de police :  14 px ;
+}
